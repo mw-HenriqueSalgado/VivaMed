@@ -1,0 +1,39 @@
+{
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.renderWhitespace": "all",
+    "editor.tabCompletion": "on",
+
+    // Keep repos clean
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": false,
+    "files.eol": "\n",
+
+    // Save behaviour
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+
+    // Apply formatters by language (prevents random formatter selection)
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+
+    // If you use Stylelint (recommended only with a stylelint config present)
+    "stylelint.validate": ["css", "scss"],
+
+    // Make warnings pop (nice with Vite + SCSS)
+    "errorLens.enabled": true,
+
+    // Conventional commits helper
+    "conventionalCommits.scopes": []
+}

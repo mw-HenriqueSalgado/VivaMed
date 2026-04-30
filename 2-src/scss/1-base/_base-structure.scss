@@ -1,0 +1,84 @@
+@use "../0-abstract/scss-functions" as scss-functions;
+
+/* ==================================================================== */
+/*  Root - CSS Variables                                                */
+/* ==================================================================== */
+
+:root {
+    /* Color - Brand */
+    --color-primary-dark: #32006b;
+    --color-primary: #6400dc;
+    --color-primary-light: #c199f1;
+
+    --color-secondary: #2d9fb2;
+
+    --color-primary-hover: var(--color-primary-dark);
+    --color-primary-selected: var(--color-primary-dark);
+
+    --header-size: 56px;
+    --header-size-content: 48px;
+    --side-menu-size: 280px;
+
+
+    --font-size-display: #{scss-functions.px-to-rem(36px)};
+
+    --font-size-h1: #{scss-functions.px-to-rem(32px)};
+    --font-size-h2: #{scss-functions.px-to-rem(28px)};
+    --font-size-h3: #{scss-functions.px-to-rem(26px)};
+    --font-size-h4: #{scss-functions.px-to-rem(22px)};
+    --font-size-h5: #{scss-functions.px-to-rem(20px)};
+    --font-size-h6: #{scss-functions.px-to-rem(18px)};
+    
+    --font-size-base: #{scss-functions.px-to-rem(16px)};
+    --font-size-s: #{scss-functions.px-to-rem(14px)};
+    --font-size-xs: #{scss-functions.px-to-rem(12px)};
+    --font-size-label: #{scss-functions.px-to-rem(11px)};
+}
+
+.highlight-styles,
+.os-dark-mode {
+    
+    --color-primary-dark: #6400dc;
+    --color-primary: #a799ff;
+    --color-primary-light: #e2c9ff;
+
+    --color-neutral-0: #0e0e0e;
+    --color-neutral-1: #141414;
+    --color-neutral-2: #1f1f1f;
+    --color-neutral-3: #252525;
+    --color-neutral-4: #282828;
+    --color-neutral-5: #323232;
+    --color-neutral-6: #858585;
+    --color-neutral-7: #c9c9c9;
+    --color-neutral-8: #d7d7d7;
+    --color-neutral-9: #F8F9FA;
+    --color-neutral-10: #fff;
+
+     --header-color: var(--color-neutral-3);
+
+    color: var(--color-neutral-9);
+}
+
+.os-dark-mode {
+    --color-background-body: #101213;
+}
+
+.os-dark-mode .highlight-styles {
+
+  --color-primary-dark: #32006b;
+  --color-primary: #6400dc;
+  --color-primary-light: #c199f1;
+
+  --color-neutral-0:#ffffff;
+  --color-neutral-1:#f8f9fa;
+  --color-neutral-2:#f1f3f5;
+  --color-neutral-3:#e9ecef;
+  --color-neutral-4:#dee2e6;
+  --color-neutral-5:#ced4da;
+  --color-neutral-6:#adb5bd;
+  --color-neutral-7:#6a7178;
+  --color-neutral-8:#4f575e;
+  --color-neutral-9:#272b30;
+  --color-neutral-10:#101213;
+
+}

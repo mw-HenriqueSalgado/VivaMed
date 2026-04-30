@@ -1,0 +1,25 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "github.copilot-chat",
+        "github.vscode-pull-request-github",
+        "gruntfuggly.todo-tree",
+        "heaths.vscode-guid",
+        "jakob101.relativepath",
+        "mdickin.markdown-shortcuts",
+        "mhutchie.git-graph",
+        "mrmlnc.vscode-postcss-sorting",
+        "pkief.material-icon-theme",
+        "ritwickdey.liveserver",
+        "ryuta46.multi-command",
+        "streetsidesoftware.code-spell-checker",
+        "stylelint.vscode-stylelint",
+        "usernamehw.errorlens",
+        "tahabasri.snippets",
+        "vivaxy.vscode-conventional-commits"
+    ]
+}

@@ -1,0 +1,176 @@
+:root {
+    /* Rocket Generic variable colors */
+    
+    /* input */
+    --color-background-input:               #fff;
+    --color-background-input-disabled:      #F1F3F5;
+    --color-background-input-results:       #fff;
+    --color-background-content-disabled:    #0000001A;
+    /* backgrounds */
+    --color-background-content:             #fff;
+    --color-background-soft:                #dadada;
+    --color-background-subtle:              #b4b4b4;
+    --color-background-opacity-soft:        rgba(0, 0, 0, 0.12);
+    --color-background-opacity-subtle:      rgba(0, 0, 0, 0.06);
+
+    /* text */
+    --color-text-main:                  #272b30;
+    --color-text-on-contrast:           #000000;
+    --color-text-main-inverse:          #fff;
+    --color-text-soft:                  #272B30;
+    --color-text-subtle:                #4F575E;
+    --color-text-active:                #6400DC;
+    --color-text-disabled:              rgba(0, 0, 0, 0.3);
+    --color-text-input:                 #101213;
+    --color-text-main-opacity:          rgba(0, 0, 0, 0.9);
+    --color-text-soft-opacity:          rgba(0, 0, 0, 0.75);
+    --color-text-subtle-opacity:        rgba(0, 0, 0, 0.6);
+    /* borders */
+    --color-border-input:               #6A7178;
+    --color-border-input-hover:         #4F575E;
+    --color-border-soft:                rgba(0, 0, 0, 0.1);
+    --color-border-focus:               #77B7EE;
+    --color-border-shadow:              rgba(0, 0, 0, 0.1);
+     /* scroll */
+    --color-scrollbar-track:            #F1F3F5;
+    --color-scrollbar-handle:           #DEE2E6;
+    --color-scrollbar-handle-hover:     #CED4DA;
+    --color-transparent:                transparent;
+    /* Colors - Accessibility */
+    --color-focus-outer:                var(--color-border-focus);
+    --color-focus-inner:                var(--color-border-focus);
+    --color-primary-hover:              var(--color-primary-light);
+    --color-primary-selected:           var(--color-primary-lightest);
+    /* Icon */
+    --icon-size: 16px;
+    --icon-artboard-size: 24px;
+    /* Border Radius */
+    --border-radius-none: 0;
+    --border-radius-soft: 8px;
+    --border-radius-medium: 16px;
+    --border-radius-rounded: 24px;
+    --border-radius-circle: 100%;
+    /* Border Size */
+    --border-size-default: var(--border-size-s);
+    /* Shadows (Elevations) */
+    --shadow-none: none;
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-s: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-m: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-l: 0 6px 8px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 8px 10px rgba(0, 0, 0, 0.1);
+    --rkt-generic-shadow: var(--shadow-none);
+     /* form */
+    --form-element-height-small:  32px;
+    --form-element-height-medium: 40px;
+    --form-element-height-large:  48px;
+    --form-element-bg:      var(--color-background-input);
+    --form-element-radius:  var(--border-radius-soft);
+    --form-element-border:  var(--border-size-default) solid var(--color-border-input);
+    --form-element-text:    var(--color-text-input);
+    
+    
+    /* App Settings */
+    --border-radius-content:  var(--border-radius-medium);
+    --color-background-login: var(--color-background-body);
+    --focus-shadow: 0 0 0 3px var(--color-border-focus);
+    --header-color: var(--color-background-content);
+    --header-size: 56px;
+    --header-size-content: 48px;
+    --bottom-bar-size: 56px;
+    --side-menu-color: var(--color-background-content);
+   
+}
+
+.highlight-styles,
+.os-dark-mode {
+    --color-background-body:                  #101213;
+    /* input */
+    --color-background-input:                 rgba(255, 255, 255, 0.06);
+    --color-background-input-results:         #272B30;
+    --color-background-input-disabled:        #6A7178;
+    /* backgrounds */
+    --color-background-content:               #272B30;
+    --color-background-soft:                  #414141;
+    --color-background-subtle:                #666666;    
+    --color-background-opacity-soft:          rgba(255, 255, 255, 0.12);
+    --color-background-opacity-subtle:        rgba(255, 255, 255, 0.6);
+   
+    /* text */
+    --color-text-main:                        #F1F3F5;
+    --color-text-on-contrast:                 #FFFFFF;
+    --color-text-main-inverse:                #101213;
+    --color-text-soft:                        #dcdcdc;
+    --color-text-subtle:                      #bebebe;
+    --color-text-active:                      #A357FF;
+    --color-text-disabled:                    rgba(255, 255, 255, 0.3);
+    --color-text-input:                       #F1F3F5;
+    --color-text-main-opacity:                rgba(255, 255, 255, 0.9);
+    --color-text-soft-opacity:                rgba(255, 255, 255, 0.75);
+    --color-text-subtle-opacity:              rgba(255, 255, 255, 0.6);
+    /* border */
+    --color-border-input:                     rgba(255, 255, 255, 0.3);
+    --color-border-input-hover:               #F1F3F5;
+    --color-border-soft:                      rgba(255, 255, 255, 0.1);
+    --color-border-shadow:                    rgba(255, 255, 255, 0.1);
+    /* scroll */
+    --color-scrollbar-track:                  #6A7178;
+    --color-scrollbar-handle:                 #4F575E;
+    --color-scrollbar-handle-hover:           #272B30;
+
+    /* App Settings */
+    --color-background-login: var(--color-background-body);
+    --focus-shadow: 0 0 0 3px var(--color-border-focus);
+    --header-color:                           #212121;
+    --side-menu-color: var(--color-background-content);
+    
+}
+
+.os-dark-mode .highlight-styles {
+
+   /* backgrounds */
+    --color-background-content:             #fff;
+    --color-background-soft:                #dadada;
+    --color-background-subtle:              #b4b4b4;
+
+    /* text */
+    --color-text-main:                  #272b30;
+    --color-text-main-inverse:          #fff;
+    --color-text-soft:                  #272B30;
+    --color-text-subtle:                #4F575E;
+
+}
+
+.layout-side .app-menu-content {
+    background-color: var(--side-menu-color);
+}
+
+.border-soft {
+   border-color: var(--color-border-soft); 
+}
+
+.text-main {
+    color: var(--color-text-main);
+}
+.text-soft {
+    color: var(--color-text-soft);
+}
+.text-subtle {
+    color: var(--color-text-subtle);
+}
+.text-main-inverse {
+    color: var(--color-text-main-inverse);
+}
+.text-main-on-contrast {
+    color: var(--color-text-on-contrast);
+}
+
+.bg-content {
+    background-color: var(--color-background-content);
+}
+.bg-soft {
+    background-color: var(--color-background-soft);
+}
+.bg-subtle {
+    background-color: var(--color-background-subtle);
+}
