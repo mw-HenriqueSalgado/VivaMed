@@ -1,12 +1,13 @@
 :root {
     /* Rocket Generic variable colors */
-    
+
     /* input */
     --color-background-input:               #fff;
     --color-background-input-disabled:      #F1F3F5;
     --color-background-input-results:       #fff;
     --color-background-content-disabled:    #0000001A;
     /* backgrounds */
+    --color-background-active:              #521d3a;
     --color-background-content:             #fff;
     --color-background-soft:                #dadada;
     --color-background-subtle:              #b4b4b4;
@@ -17,7 +18,7 @@
     --color-text-main:                  #272b30;
     --color-text-on-contrast:           #000000;
     --color-text-main-inverse:          #fff;
-    --color-text-soft:                  #272B30;
+    --color-text-soft:                  #4f575e;
     --color-text-subtle:                #4F575E;
     --color-text-active:                #6400DC;
     --color-text-disabled:              rgba(0, 0, 0, 0.3);
@@ -31,6 +32,8 @@
     --color-border-soft:                rgba(0, 0, 0, 0.1);
     --color-border-focus:               #77B7EE;
     --color-border-shadow:              rgba(0, 0, 0, 0.1);
+     /* progressBar */
+    --color-fill-action-default: #732952;
      /* scroll */
     --color-scrollbar-track:            #F1F3F5;
     --color-scrollbar-handle:           #DEE2E6;
@@ -68,18 +71,18 @@
     --form-element-radius:  var(--border-radius-soft);
     --form-element-border:  var(--border-size-default) solid var(--color-border-input);
     --form-element-text:    var(--color-text-input);
-    
-    
+
+
     /* App Settings */
     --border-radius-content:  var(--border-radius-medium);
     --color-background-login: var(--color-background-body);
     --focus-shadow: 0 0 0 3px var(--color-border-focus);
     --header-color: var(--color-background-content);
-    --header-size: 56px;
+    --header-size: 98px;
     --header-size-content: 48px;
     --bottom-bar-size: 56px;
     --side-menu-color: var(--color-background-content);
-   
+
 }
 
 .highlight-styles,
@@ -92,10 +95,10 @@
     /* backgrounds */
     --color-background-content:               #272B30;
     --color-background-soft:                  #414141;
-    --color-background-subtle:                #666666;    
+    --color-background-subtle:                #666666;
     --color-background-opacity-soft:          rgba(255, 255, 255, 0.12);
     --color-background-opacity-subtle:        rgba(255, 255, 255, 0.6);
-   
+
     /* text */
     --color-text-main:                        #F1F3F5;
     --color-text-on-contrast:                 #FFFFFF;
@@ -123,7 +126,7 @@
     --focus-shadow: 0 0 0 3px var(--color-border-focus);
     --header-color:                           #212121;
     --side-menu-color: var(--color-background-content);
-    
+
 }
 
 .os-dark-mode .highlight-styles {
@@ -146,7 +149,7 @@
 }
 
 .border-soft {
-   border-color: var(--color-border-soft); 
+   border-color: var(--color-border-soft);
 }
 
 .text-main {

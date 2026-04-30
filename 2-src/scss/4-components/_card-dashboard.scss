@@ -1,19 +1,41 @@
 .card-dashboard {
+
     &-top {
         display: flex;
-        justify-content: space-between;
 
         &-image {
-
+            .wrapper-icon {
+                border-radius: var(--border-radius-circle);
+            }
         }
         &-title {
-
+            font-size: var(--font-size-base);
         }
         &-icon {
 
         }
     }
     &-content {
+        color: var(--color-text-main-inverse);
+        .wrapper {
+            &-values {
+                display: flex;
 
+                &-total {
+                    font-size: var(--font-size-h6);
+                }
+                &-percentage {
+                    background-color: var(--color-info);
+                    border-radius: var(--border-radius-rounded);
+                    color: var(--color-text-main);
+                    width: fit-content;
+                    font-size: var(--font-size-s);
+                }
+            }
+            &-analysis {
+                color: var(--color-text-subtle);
+                font-size: var(--font-size-s);
+            }
+        }
     }
 }
