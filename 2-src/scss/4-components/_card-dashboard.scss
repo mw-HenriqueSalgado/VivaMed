@@ -1,5 +1,8 @@
 .card-dashboard {
     &-top {
+        display: flex;
+        justify-content: space-between;
+
         &-image {
 
         }
@@ -7,7 +10,7 @@
 
         }
         &-icon {
-            
+
         }
     }
     &-content {
