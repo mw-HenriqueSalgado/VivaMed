@@ -90,13 +90,13 @@
                     color: var(--color-neutral-0);
                     display: flex;
                     font-size: var(--font-size-s);
+                    margin-left: var(--space-s);
                     padding: 0 6px;
                 }
             }
             &-analysis {
                 color: var(--color-text-subtle);
                 font-size: var(--font-size-s);
-                margin: var(--space-s) 0;
 
                 @at-root .card-dashboard--is-active & {
                     color: var(--color-neutral-0);
