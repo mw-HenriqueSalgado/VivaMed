@@ -1,41 +1,129 @@
 .card-dashboard {
-
+    &--is-active {
+        background-color: var(--color-primary);
+    }
     &-top {
+        align-items: center;
         display: flex;
 
         &-image {
-            .wrapper-icon {
+            .wrapper-image {
+                background-color: var(--color-primary);
                 border-radius: var(--border-radius-circle);
+                padding: 12px;
+
+                @at-root .card-dashboard--is-active & {
+                    background-color: var(--color-neutral-0);
+
+                    i {
+                        color: var(--color-primary);
+                    }
+                }
+
+                i {
+                    color: var(--color-neutral-0);
+                }
             }
         }
         &-title {
-            font-size: var(--font-size-base);
+            font-size: var(--font-size-m);
+            margin-left: var(--space-base);
+
+            @at-root .card-dashboard--is-active & {
+                color: var(--color-neutral-0);
+            }
         }
         &-icon {
+            margin: 0 0 auto auto;
 
+            .btn {
+                border: none;
+                border-radius: var(--border-radius-soft);
+                padding: 0 var(--space-xs);
+                width: fit-content;
+
+                &:hover {
+                    filter: brightness(0.9);
+                }
+
+                @at-root .card-dashboard--is-active & {
+                    background-color: var(--color-primary);
+                    color: var(--color-neutral-0);
+
+                    &:hover {
+                        background-color: var(--color-fill-action-hover);
+                    }
+                }
+
+                i {
+                    color: var(--color-text-subtle);
+                    margin: 0;
+
+                    @at-root .card-dashboard--is-active & {
+                        color: var(--color-neutral-0);
+                    }
+                }
+            }
         }
     }
     &-content {
         color: var(--color-text-main-inverse);
         .wrapper {
             &-values {
+                align-items: center;
                 display: flex;
+                margin-top: var(--space-base);
 
                 &-total {
-                    font-size: var(--font-size-h6);
+                    color: var(--color-neutral-10);
+                    font-size: var(--font-size-h3);
+                    font-weight: 500;
+                    margin-right: var(--space-xs);
+
+                    @at-root .card-dashboard--is-active & {
+                        color: var(--color-neutral-0);
+                    }
                 }
                 &-percentage {
-                    background-color: var(--color-info);
+                    align-items: center;
                     border-radius: var(--border-radius-rounded);
-                    color: var(--color-text-main);
-                    width: fit-content;
+                    color: var(--color-neutral-0);
+                    display: flex;
                     font-size: var(--font-size-s);
+                    padding: 0 6px;
                 }
             }
             &-analysis {
                 color: var(--color-text-subtle);
                 font-size: var(--font-size-s);
+                margin: var(--space-s) 0;
+
+                @at-root .card-dashboard--is-active & {
+                    color: var(--color-neutral-0);
+                }
+            }
+            &-progressbar {
+                display: flex;
+                gap: var(--space-s);
+                margin-top: var(--space-s);
+
+                .bar {
+                    align-self: center;
+                    margin-top: 2px;
+                    padding-right: var(--space-base);
+                    width: 100%;
+                }
+
+                span {
+                    color: var(--color-neutral-10);
+                    font-weight: 500;
+
+                    @at-root .card-dashboard--is-active & {
+                        color: var(--color-neutral-0);
+                    }
+                }
             }
         }
     }
 }
+
