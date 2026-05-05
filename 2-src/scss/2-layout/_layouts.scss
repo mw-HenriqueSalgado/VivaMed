@@ -1,8 +1,7 @@
 .layout {
     &:not(.layout-side) {
         .header {
-            background: transparent;
-            -webkit-box-shadow: none;
+            background: var(--color-background-body);
             box-shadow: none;
 
             &-top {
@@ -45,11 +44,6 @@
                     width: 92px;
 
                     &-item {
-                        -ms-flex-align: center;
-                        -ms-flex-pack: center;
-                        -webkit-box-align: center;
-                        -webkit-box-pack: center;
-                        -webkit-transition: color 0.3s ease;
                         align-items: center;
                         background: transparent;
                         border: var(--border-size-none);
@@ -78,16 +72,12 @@
                         height: calc(100% - calc(var(--space-xs) * 2));
                         background: var(--color-fill-action-default);
                         border-radius: 38px;
-                        -webkit-transition: -webkit-transform 0.3s
-                            cubic-bezier(0.4, 0, 0.2, 1);
                         transition: -webkit-transform 0.3s
                             cubic-bezier(0.4, 0, 0.2, 1);
                         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                         transition:
-                            transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-                            -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                            transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                         z-index: 1;
-                        -webkit-transform: translateX(0);
                         -ms-transform: translateX(0);
                         transform: translateX(0);
                     }

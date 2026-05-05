@@ -1,0 +1,87 @@
+.calendar-dashboard {
+
+    // SELEÇÃO DO MÊS
+    .flatpickr-months {
+        display: grid;
+        grid-template-areas: "prev date next";
+        grid-template-columns: 0fr 1fr 0fr;
+        padding: 0 var(--space-s);
+        align-items: center;
+
+        .flatpickr-month {
+            justify-self: center;
+
+            // Esconde o ano (numInputWrapper)
+            .numInputWrapper {
+                display: none;
+            }
+
+            span.cur-month {
+                color: var(--color-text-main);
+                font-size: var(--font-size-h6);
+                font-weight: var(--font-medium);
+            }
+        }
+
+        .flatpickr-prev-month,
+        .flatpickr-next-month {
+            svg path {
+                stroke: var(--color-text-soft);
+                stroke-width: 1px;
+            }
+        }
+    }
+
+    // DIAS DA SEMANA
+    span.flatpickr-weekday {
+        font-size: var(--font-size-xs);
+        color: var(--color-text-soft);
+    }
+
+    // DIAS
+    .dayContainer {
+        display: grid !important;
+        grid-template-columns: repeat(7, 1fr) !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .flatpickr-day {
+        border-radius: var(--border-radius-high);
+        font-size: var(--font-size-base);
+        font-weight: var(--font-medium);
+        margin: 0 !important;
+        max-width: none !important;
+        width: 100% !important;
+
+        // Dia de hoje
+        &.today {
+            border: 2px solid var(--color-neutral-6);
+            background: transparent;
+        }
+
+        // Dia seleccionado
+        &.selected {
+            background-color: var(--color-secondary);
+            border-color: transparent;
+        }
+
+        // Dias fora do mês
+        &.prevMonthDay,
+        &.nextMonthDay {
+            color: var(--color-neutral-4);
+        }
+    }
+
+    // CALENDAR
+    .flatpickr-calendar {
+        border: none;
+        border-radius: var(--border-radius-rounded);
+        width: 100%;
+    }
+
+    .flatpickr-innerContainer {
+        padding-top: var(--space-base);
+    }
+}

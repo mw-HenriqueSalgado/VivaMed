@@ -1,0 +1,70 @@
+.tl-dashboard {
+    &-left {
+        align-self: center;
+        color: var(--color-text-subtle);
+        font-size: var(--font-size-base);
+        font-weight: var(--font-medium);
+    }
+
+    .timeline-item {
+        .timeline {
+            &-left {
+                align-self: center;
+                min-width: 37px;
+            }
+            &-icon {
+                transform: translateY(34px);
+                &-line {
+                    background-color: var(--color-primary);
+                    margin: 0;
+                    transform: translateY(10px);
+                    width: 3px;
+                }
+                &-container {
+                    background: transparent;
+                    height: 0;
+
+                    i {
+                        color: var(--color-primary);
+                        height: 0;
+                    }
+                }
+            }
+
+            &-content {
+                margin-bottom: var(--space-s);
+            }
+        }
+    }
+
+    &-content {
+        &-card {
+            align-items: center;
+            background-color: var(--color-border-card);
+            display: flex;
+            gap: var(--space-s);
+            padding: var(--space-base);
+            &-avatar{
+
+            }
+            &-right {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    margin: 0;
+                }
+
+                :first-child {
+                    font-size: var(--font-size-base);
+                    color: var(--color-neutral-10);
+                }
+                :last-child {
+                    color: var(--color-text-subtle);
+                    font-weight: var(--font-medium);
+                    font-size: var(--font-size-xs);
+                }
+            }
+        }
+    }
+}
